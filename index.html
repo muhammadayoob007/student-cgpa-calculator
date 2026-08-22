@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student CGPA & GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h2>CGPA & Semester Calculator</h2>
+
+        <div id="courses-section">
+            <div class="course-row">
+                <input type="text" placeholder="Course Name (e.g., Math)" class="course-name">
+                <select class="course-grade">
+                    <option value="4.0">A (4.0)</option>
+                    <option value="3.7">A- (3.7)</option>
+                    <option value="3.3">B+ (3.3)</option>
+                    <option value="3.0">B (3.0)</option>
+                    <option value="2.7">B- (2.7)</option>
+                    <option value="2.3">C+ (2.3)</option>
+                    <option value="2.0">C (2.0)</option>
+                    <option value="1.0">D (1.0)</option>
+                    <option value="0.0">F (0.0)</option>
+                </select>
+                <input type="number" placeholder="Credits" class="course-credits" value="3" min="1" max="6">
+            </div>
+        </div>
+
+        <button id="add-course-btn">Add Course</button>
+        <button id="calculate-btn">Calculate CGPA</button>
+
+        <div id="result" class="result-box">
+            <p>Your GPA will appear here...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
